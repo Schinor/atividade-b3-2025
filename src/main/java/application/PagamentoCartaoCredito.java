@@ -49,7 +49,7 @@ public class PagamentoCartaoCredito extends Pagamento implements Priorizavel, Pr
     @Override
     public boolean processar() {
         System.out.println("Processando pagamento via cartão ID: " + this.getIdTransacao());
-        System.out.println("Transação " + this.getIdTransacao() + "APROVADO");
+        System.out.println("Transação " + this.getIdTransacao() + " APROVADO");
         this.setStatus("Aprovado");
         return true;
     }
